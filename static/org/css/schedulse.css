@@ -1,0 +1,357 @@
+/******************************************************
+ * スケジュール
+ ******************************************************/
+/*====================================================
+ * カレンダー上部【グループとか日付とか前週から翌週】
+ *====================================================*/
+/* table用 */
+#schedule .schedule_title {
+	border:none;
+    width: 100%;
+}
+
+/* グループ用 */
+#schedule .schedule_title .group {
+	border:none;
+    verticla-align: middle;
+}
+
+/* 前週から翌週用 */
+#schedule .schedule_title .link-button {
+	border:none;
+    text-align: right;
+    verticla-align: middle;
+}
+
+/*  */
+#schedule .schedule_title .icon-small img {
+	min-width: 15px;
+	max-width: 15px;
+}
+
+/* 日付用 */
+#schedule .schedule_title .text-day {
+    text-align: center;
+    verticla-align: middle;
+}
+
+/*====================================================
+ * メインのカレンダー */
+ *====================================================*/
+/* table用 */
+#schedule table {
+    table-layout: fixed;
+    width: 100%;
+    font-weight: lighter;
+}
+
+/* table用 */
+#schedule table tbody th p {
+    padding: 0;
+    margin: 0;
+}
+
+/* table用 */
+#schedule table td,
+#schedule table th {
+    padding: 1px;
+}
+
+/* グループ週、アカウント情報の横幅 */
+#schedule table .name {
+    width: 16%;
+}
+
+/* グループ週、１週間の横幅 */
+#schedule table .day {
+    width: 12%;
+}
+
+/* グループ日、アカウント情報の横幅 */
+#schedule table .gday-name {
+    width: 13%;
+}
+
+/*  */
+#schedule table .gday-yotei-waku {
+    width: 15%;
+}
+
+/*  */
+#schedule table .gday-time-waku {
+    width: 72%;
+}
+
+/*  */
+#schedule table thead th {
+    text-align: center;
+    verticla-align: middle;
+}
+
+/*  */
+#schedule table .image img {
+	min-width: 40px;
+	max-width: 40px;
+}
+
+/*  */
+#schedule table tbody th .yotei {
+    width: 100%;
+    margin: 1px;
+    border-radius: 3px 3px 3px 3px;
+    background-color: #DFEEFC;			/* DB取得＆HTML直書き予定 */
+}
+
+/*  */
+#schedule table tbody th .yoteitag {
+    border-radius: 3px 3px 3px 3px;
+    background-color: #008000;			/* DB取得＆HTML直書き予定 */
+    padding: 1px;
+	color: white;
+}
+
+/*  */
+#schedule table tbody th .peaple-img,
+#schedule table tbody th .peaple-monthdisp {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+/*  */
+#schedule table .gday-yotei {
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+/*  */
+#schedule .inner-table-wap {
+    width:100%;
+    height:100%; 
+    overflow-x:scroll;
+    overflow-y: hidden;
+}
+
+/*  */
+#schedule .inner-table {
+    width:2160px;
+}
+
+/*  */
+#schedule .inner-table th {
+    width: 90px;
+}
+
+/*  */
+#schedule .inner-table .time-scale {
+    height: 10px;
+}
+
+/*  */
+#schedule .inner-table .gday-yotei-minhaight {
+	min-height:80px;
+}
+
+/*  */
+#schedule .pyear-table {
+    width:100%; 
+    border:0; 
+    cellspacing:0; 
+    cellpadding:2;
+}
+
+/*  */
+#schedule .pyear-month-table-wap {
+	width: 16%;
+}
+
+/*  */
+#schedule .pyear-month-table-wap table {
+	table-layout: fixed;
+}
+
+/*  */
+#schedule .pyear-month-table-wap table tbody td {
+	border: 1px solid #bbb;
+	padding: 3px;
+}
+
+/*  */
+#schedule .pyear-day {
+	width: 20%;
+	text-align:center;
+	cursor:default;
+}
+
+/*  */
+#schedule .pyear-day:hover {
+    background-color: #aaaaff;
+    cursor: pointer;
+	cursor: hand;
+}
+
+/*  */
+#schedule .pyear-day-ditail {
+	width: 80%;
+	text-align:left;
+}
+
+/*  */
+#schedule .pyear-table table tbody td a {
+	display: block;
+	color: #000000;
+}
+
+/*  */
+#schedule .noborder {
+	border-style:none; 
+}
+
+/*  */
+#schedule .tblnoborder {
+	border-top-style:none; 
+	border-bottom-style:none; 
+    border-left-style:none; }
+
+/*====================================================
+ * 登録・詳細・削除
+ *====================================================*/
+/*  */
+.accordion-menu label {
+	margin: 0;
+	pdding: 0;
+}
+
+/*  */
+.accordion-menu input[type="checkbox"].on-off {
+    display: none;
+}
+
+/*  */
+.accordion-menu .on-off-target {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*  */
+.accordion-menu input[type="checkbox"].on-off + .on-off-target {
+    height: 0;
+    overflow: hidden;
+}
+
+/*  */
+.accordion-menu input[type="checkbox"].on-off:checked + .on-off-target {
+    height: 170px;
+}
+
+/* 登録 */
+.regist_table {
+	border-collapse: separate;
+	border-spacing: 20px 20px;
+}
+
+/*  */
+.regist_title {
+	width:8%;
+	text-align:right;
+    verticla-align: top;
+}
+
+/*  */
+.radio-wap {
+	height: 2em;
+}
+
+.square {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	border-radius:3px;
+}
+
+/*====================================================
+ * 詳細表示
+ *====================================================*/
+/*  */
+.detail_table {
+	table-layout:fixed;
+	width:100%;
+	border-collapse: separate; 
+	border-spacing: 20px 20px; 
+}
+
+/*  */
+.detail_table td,
+.detail_table th {
+    border-bottom:1px dashed #ccc;
+    font-size:1.2em;
+}
+
+/* タイトル */
+.detail_title {
+	width:12%;
+	text-align:left;
+    verticla-align: top;
+}
+
+/* 内容 */
+.detail_discription {
+	width:90%;
+	text-align:left;
+    verticla-align: top;
+}
+
+/*====================================================
+ * 
+ *====================================================*/
+/*  */
+@media (max-width: 640px) {
+	.regist-company-info {
+		display: inline-block;
+		border:1px solid #cccccc; 
+		background-color:#ffffff;
+	    verticla-align: middle;
+	}
+}
+
+/*  */
+@media (min-width: 640px) {
+	.regist-company-info {
+		display: inline-block;
+		width:32em;
+		border:1px solid #cccccc; 
+		background-color:#ffffff;
+	    verticla-align: middle;
+	}
+
+	.regist-yotei-title {
+		width:28em;
+	}
+
+	.regist-yotei-memo {
+		width:32em;
+	}
+
+	#schedule .presentation .regist_select {
+		width:15em;
+	}
+}
+
+/*====================================================
+ * 
+ *====================================================*/
+/*  */
+#schedule .presentation, 
+#schedule .presentation th, 
+#schedule .presentation td {
+  width: auto !important;
+  padding: 5px;
+  
+}
+
