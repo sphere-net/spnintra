@@ -21,99 +21,48 @@
 
 {% block content_main %}
 {% load static %}
-<div class="col-lg-4">
+<div class="col-lg-12">
     <div class="card">
         <div class="card-header">
-            <h5 class="m-0">Featured</h5>
+            <h5 class="m-0">基本設定</h5>
         </div>
         <div class="card-body">
+            ここに基本設定の項目が入る
         </div>
     </div>
 </div>
-<div class="col-lg-8">
+<div class="col-lg-12">
     <div class="card">
         <div class="card-header">
-            <div class="box-header with-border">
-                <div class="box-tools float-right">
-                    <span data-toggle="tooltip" title="3 New Messages" class="badge bg-red">3</span>
-                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                    <button class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
-                    <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                </div>
-            </div>
+            <h5 class="m-0">運用管理</h5>
             <!-- /.box-header -->
         </div>
         <div class="card-body">
-            <div class="box box-danger direct-chat direct-chat-danger">
-                <div class="box-body">
-                    <!-- Conversations are loaded here -->
-                    <div class="direct-chat-messages">
-                        <!-- Message. Default to the left -->
-                        <div class="direct-chat-msg">
-                            <div class="direct-chat-info clearfix">
-                                <span class="direct-chat-name pull-left">Alexander Pierce</span>
-                                <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
-                            </div>
-                            <!-- /.direct-chat-info -->
-                            <img class="direct-chat-img" src="{%static 'dist/img/user2-160x160.jpg'%}" alt="message user image">
-                            <!-- /.direct-chat-img -->
-                            <div class="direct-chat-text">
-                                pushとpullのテストです
-                            </div>
-                            <!-- /.direct-chat-text -->
-                        </div>
-                        <!-- /.direct-chat-msg -->
-                        <!-- Message to the right -->
-                        <div class="direct-chat-msg right">
-                            <div class="direct-chat-info clearfix">
-                                <span class="direct-chat-name float-right">Sarah Bullock</span>
-                                <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
-                            </div>
-                            <!-- /.direct-chat-info -->
-                            <img class="direct-chat-img" src="{%static 'dist/img/user2-160x160.jpg'%}" alt="message user image">
-                            <!-- /.direct-chat-img -->
-                            <div class="direct-chat-text">
-                                You better believe it!
-                            </div>
-                            <!-- /.direct-chat-text -->
-                        </div>
-                        <!-- /.direct-chat-msg -->
-                    </div>
-                    <!--/.direct-chat-messages-->
-                    <!-- Contacts are loaded here -->
-                    <div class="direct-chat-contacts">
-                        <ul class="contacts-list">
-                            <li>
-                                <a href="#">
-                                    <img class="contacts-list-img" src="{%static 'dist/img/user2-160x160.jpg'%}" alt="Contact Avatar">
-                                    <div class="contacts-list-info">
-                                        <span class="contacts-list-name">
-                                            Count Dracula
-                                            <small class="contacts-list-date float-right">2/28/2015</small>
-                                        </span>
-                                        <span class="contacts-list-msg">How have you been? I was...</span>
-                                    </div>
-                                    <!-- /.contacts-list-info -->
-                                </a>
-                            </li>
-                            <!-- End Contact Item -->
-                        </ul>
-                        <!-- /.contatcts-list -->
-                    </div>
-                    <!-- /.direct-chat-pane -->
-                </div>
-                <!-- /.box-body -->
-                <div class="box-footer">
-                    <div class="input-group">
-                        <input type="text" name="message" placeholder="Type Message ..." class="form-control">
-                        <span class="input-group-btn">
-                            <button type="button" class="btn btn-danger btn-flat">Send</button>
-                        </span>
-                    </div>
-                </div>
-                <!-- /.box-footer-->
-            </div>
-            <!--/.direct-chat -->
+            ここに運用管理の項目が入る
+        </div>
+    </div>
+</div>
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-header">
+            <h5 class="m-0">各アプリケーション</h5>
+            <!-- /.box-header -->
+        </div>
+        <div class="card-body nav">
+            <div class="col-2"><i class="nav-icon fas fa-calendar-alt fa-2x"></i></div>
+            <div class="col-2"><i class="nav-icon fas fa-folder-open fa-2x"></i></div>
+            <div class="col-2"><i class="nav-icon fas fa-clock fa-2x"></i></div>
+            <div class="col-2"><i class="nav-icon fas fa-file-alt fa-2x"></i></div>
+            <div class="col-2"><i class="nav-icon fas fa-stamp fa-2x"></i></div>
+            <div class="col-2"><i class="nav-icon fas fa-chalkboard-teacher fa-2x"></i></div>
+            <div class="col-2"><i class="nav-icon fas fa-comments fa-2x"></i></div>
+            <div class="col-2"><i class="nav-icon fas fa-envelope fa-2x"></i></div>
+            <div class="col-2"><i class="nav-icon fas fa-tasks fa-2x"></i></div>
+            <div class="col-2"><i class="nav-icon fas fa-users fa-2x"></i></div>
+            <div class="col-2"><i class="nav-icon fas fa-laptop fa-2x"></i></div>
+            <div class="col-2"><i class="nav-icon fas fa-address-card fa-2x"></i></div>
+            <div class="col-2"><i class="nav-icon fas fa-user-check fa-2x"></i></div>
+            <div class="col-2"><i class="nav-icon fas fa-robot fa-2x"></i></div>
         </div>
     </div>
 </div>
